@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+:root {
+  --primer-color: #49c8d3;
+  --segundo-color: #37b6c1;
+  --tercer-color: #25a4af;
+  --cuarto-color: #12919c;
+  --quinto-color: #007f8a;
+  --azul-oscuro: #0f0f15;
+  --color-rojo: #dc1b04;
+  --blanco: #fff;
+  --rosado: rgb(216, 2, 134);
+  --fondo-boton: #162944;
+  --gris-claro: #f0f0f0;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenedor-foro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  font-size: 25px;
+}
+
+.forum-foro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 800px;
+  width: 550px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--blanco);
+  color: var(--azul-oscuro);
+}
+
+.forum-foro div {
+  width: 90%;
+  margin: 20px 0 5px;
+}
+
+.forum-foro div input,
+.forum-foro div textarea {
+  width: 100%;
+}
+
+.forum-foro div textarea {
+  resize: none;
+  height: 100px;
+}
+
+.forum-foro div label {
+  width: 100%;
+  font-size: 20px;
+}
+
+.btn-crear-foro {
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  border: none;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-crear-foro:hover {
+  background-color: var(--fondo-boton);
+}

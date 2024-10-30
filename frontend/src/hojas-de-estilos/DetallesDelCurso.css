@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --primer-color: #49c8d3;
+  --segundo-color: #37b6c1;
+  --tercer-color: #25a4af;
+  --cuarto-color: #12919c;
+  --quinto-color: #007f8a;
+  --azul-oscuro: #0f0f15;
+  --color-rojo: #dc1b04;
+  --blanco: #fff;
+  --rosado: rgb(216, 2, 134);
+  --fondo-azul: #162944;
+  --gris-claro: #f0f0f0;
+  --fondo-detalles: #39828b;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenedor-detalles-curso {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "titulo-del-curso titulo-del-curso  titulo-del-curso  img-curso"
+    "descripcion      descripcion       descripcion       img-curso"
+    "precio           fecha-inicio      fecha-fin         img-curso"
+    "btn-inscribirse  btn-inscribirse   btn-inscribirse   btn-inscribirse"
+    "titulo-modulos   titulo-modulos    titulo-modulos    titulo-modulos"
+    "lista-modulos    lista-modulos     lista-modulos     lista-modulos   ";
+  padding: 20px;
+  background-color: var(--blanco);
+}
+
+.titulo-del-curso {
+  grid-area: titulo-del-curso;
+  border-bottom: 2px solid var(--azul-oscuro);
+}
+
+.descripcion {
+  grid-area: descripcion;
+  border-bottom: 2px solid var(--azul-oscuro);
+}
+
+.precio {
+  grid-area: precio;
+  background-color: var(--azul-oscuro);
+  box-shadow: var(--box-shadow);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--blanco);
+}
+
+.fecha-inicio {
+  grid-area: fecha-inicio;
+  background-color: var(--azul-oscuro);
+  box-shadow: var(--box-shadow);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--blanco);
+}
+
+.fecha-fin {
+  grid-area: fecha-fin;
+  background-color: var(--azul-oscuro);
+  box-shadow: var(--box-shadow);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--blanco);
+}
+
+.img-curso {
+  grid-area: img-curso;
+  width: 600px;
+  height: 340px;
+  border: 1px solid var(--azul-oscuro);
+  margin: auto;
+  border-radius: 5px;
+}
+
+.titulo-modulos {
+  grid-area: titulo-modulos;
+  border-bottom: 2px solid var(--azul-oscuro);
+}
+
+.lista-modulos {
+  grid-area: lista-modulos;
+}
+
+.btn-inscribirse {
+  grid-area: btn-inscribirse;
+  margin: 0 auto;
+  color: var(--blanco);
+  border: 2px solid var(--azul-oscuro);
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out, color 0.4s ease-out;
+  width: 80%;
+  text-align: center;
+  background-color: var(--azul-oscuro);
+}
+
+.btn-inscribirse:hover {
+  background-color: var(--fondo-azul);
+  color: var(--blanco);
+}

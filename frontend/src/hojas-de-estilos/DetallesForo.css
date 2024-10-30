@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --primer-color: #49c8d3;
+  --segundo-color: #37b6c1;
+  --tercer-color: #25a4af;
+  --cuarto-color: #12919c;
+  --quinto-color: #007f8a;
+  --azul-oscuro: #0f0f15;
+  --color-rojo: #dc1b04;
+  --blanco: #fff;
+  --rosado: rgb(216, 2, 134);
+  --fondo-boton: #162944;
+  --gris-claro: #f0f0f0;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenedor-general-foro {
+  padding: 20px;
+}
+
+.btn-crear-foro-detalles {
+  padding: 10px 20px;
+  background-color: var(--fondo-boton);
+  color: var(--blanco);
+  box-shadow: var(--box-shadow);
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-crear-foro-detalles:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.contenedor-foro-detalles {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--azul-oscuro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "foro-titulo-detalles           foro-fecha-creacion-detalles"
+    "foro-descripcion-detalles      foro-descripcion-detalles"
+    "btn-mostrar-formulario         formulario-publicacion"
+    "publicaciones-detalles-foro publicaciones-detalles-foro";
+}
+
+.foro-titulo-detalles {
+  grid-area: foro-titulo-detalles;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 1px solid var(--azul-oscuro);
+  background-color: var(--fondo-boton);
+  color: var(--blanco);
+  padding: 15px 0;
+  text-align: center;
+}
+
+.foro-descripcion-detalles {
+  grid-area: foro-descripcion-detalles;
+  border: 1px solid var(--fondo-boton);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+.foro-fecha-creacion-detalles {
+  grid-area: foro-fecha-creacion-detalles;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 5px 5px 0;
+}
+
+.foro-titulo-detalles {
+  grid-area: foro-titulo-detalles;
+}
+
+.btn-mostrar-formulario {
+  grid-area: btn-mostrar-formulario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--fondo-boton);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--blanco);
+}
+
+.btn-mostrar-formulario:hover {
+  background-color: var(--azul-oscuro);
+}
+
+.formulario-publicacion {
+  grid-area: formulario-publicacion;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.text-area-detalles-publicacion {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+.btn-enviar-publicacion {
+  box-shadow: var(--fondo-boton);
+  font-size: 16px;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-enviar-publicacion:hover {
+  background-color: var(--fondo-boton);
+}
+
+.publicaciones-detalles-foro {
+  grid-area: publicaciones-detalles-foro;
+}
+
+.publicacion-detalles {
+  grid-area: publicacion-detalles;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.d-contenido-p {
+  border: 1px solid var(--azul-oscuro);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px; 
+}

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+/* Estilo general del contenedor principal */
+.contenedor-agregar-cursos {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-agregar-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Títulos */
+.titulo-agregar-curso,
+.titulo-modulos {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Inputs generales */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;  
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  resize: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Divisiones */
+.div-para-agregar-curso,
+.contenedor-para-agregar-modulos-lecciones,
+.modulo,
+.leccion {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de módulos */
+.modulo {
+  border-left: 4px solid #4caf50;
+  padding-left: 10px;
+}
+
+.nombre-modulo,
+.descripcion-modulo {
+  margin-bottom: 10px;
+}
+
+/* Estilos de lecciones */
+.leccion {
+  padding-left: 10px;
+  border-left: 3px solid #24aacc;
+  margin-top: 10px;
+}
+
+.nombre-leccion,
+.descripcion-leccion,
+.duracion-leccion,
+.tipo-leccion,
+.url-contenido {
+  margin-bottom: 10px;
+}
+
+/* Botones */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-agregar-modulo {
+  background-color: #4caf50;
+  margin-top: 10px;
+}
+
+.agregar-leccion {
+  background-color: #2196f3;
+  margin-top: 10px;
+}
+
+.btn-crear-curso {
+  background-color: #673ab7;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Input específico de imagen y precio */
+.imagen-url,
+.precio-cc {
+  margin-top: 10px;
+}

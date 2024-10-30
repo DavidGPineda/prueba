@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --primer-color: #49c8d3;
+  --segundo-color: #37b6c1;
+  --tercer-color: #25a4af;
+  --cuarto-color: #12919c;
+  --quinto-color: #007f8a;
+  --azul-oscuro: #0f0f15;
+  --color-rojo: #dc1b04;
+  --blanco: #fff;
+  --rosado: rgb(216, 2, 134);
+  --fondo-boton: #162944;
+  --gris-claro: #f0f0f0;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenedor-panel-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.btn-navegar-profesor {
+  border: 1px solid var(--blanco);
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 10px 20px;
+  font-size: 20px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.btn-navegar-profesor:hover {
+  background-color: var(--fondo-boton);
+}
+
+.tabla {
+  max-width: 90%;
+  width: 90%;
+  border-collapse: collapse;
+
+  background-color: #8c8c8c;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+td {
+  color: #000000;
+}
+
+table caption {
+  caption-side: top;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.btn-eliminar-usuario {
+  padding: 5px 10px;
+  margin: 2px;
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  border: none;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  cursor: pointer;
+}

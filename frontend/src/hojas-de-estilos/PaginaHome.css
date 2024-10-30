@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --primer-color: #49c8d3;
+  --segundo-color: #37b6c1;
+  --tercer-color: #25a4af;
+  --cuarto-color: #12919c;
+  --quinto-color: #007f8a;
+  --azul-oscuro: #0f0f15;
+  --color-rojo: #dc1b04;
+  --blanco: #fff;
+  --rosado: rgb(216, 2, 134);
+  --fondo-azul: #162944;
+  --gris-claro: #f0f0f0;
+  --fondo-pantalla-p: #050a30;
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contenedor-home {
+  display: grid;
+  background-color: var(--fondo-pantalla-p);
+
+  grid-template-columns: (1fr);
+  grid-template-areas:
+    "presentacion"
+    "conte-cursos";
+}
+
+.presentacion {
+  grid-area: presentacion;
+  background-color: var(--fondo-pantalla-p);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  color: var(--blanco);
+}
+
+.presentacion h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.presentacion h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.presentacion h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.conte-cursos {
+  grid-area: conte-cursos;
+}
+
+.conte-foros {
+  grid-area: conte-foros;
+}
+
+.estilos-cursos-foros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  background-color: var(--gris-claro);
+  margin: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}
+
+.enlaces {
+  background-color: var(--fondo-azul);
+  box-shadow: var(--box-shadow);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: var(--blanco);
+  text-decoration: none;
+  margin-top: 30px;
+}
